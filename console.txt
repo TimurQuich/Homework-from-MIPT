@@ -1,4 +1,3 @@
-D:\Горный\NEW_CHAPTER\PROGRAMMING\Matrix_Operations\Scripts\python.exe D:\Горный\NEW_CHAPTER\PROGRAMMING\Matrix_Operations\main.py 
 Initial matrix A:
 0.613 0.427 0.322
 0.606 0.938 0.341
