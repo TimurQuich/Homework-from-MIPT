@@ -50,5 +50,3 @@ Matrix-vector multiplication (80x80): 0.001001 seconds
 Diagonal sum calculation (80x80): 0.0 seconds
 Histogram (5000 elements): 0.002 seconds
 Vector filter (5000 elements): 0.006875 seconds
-
-Process finished with exit code 0
