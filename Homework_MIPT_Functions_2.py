@@ -67,14 +67,19 @@ def get_sum_diag(matrix):
 def convolution_2D(matrix, kernel):
     M = len(matrix)
     N = len(matrix[0])
-    matrix_upd = copy.deepcopy(matrix)
-    result = copy.deepcopy(matrix)
-    for row in matrix_upd:
-        row.insert(0, 0)
-        row.append(0)
-    matrix_upd.insert(0, [0 for _ in range(M + 2)])
-    matrix_upd.append([0 for _ in range(M + 2)])
+
+    result = [[0] * N for _ in range(M)]
+
+    # Expanding an initial matrix
     K = len(kernel)
+    pad = K // 2
+
+    matrix_upd = [[0] * (N + 2 * pad) for _ in range(M + 2 * pad)]
+    for i in range(pad, M + pad):
+        for j in range(pad, N + pad):
+            matrix_upd[i][j] = matrix[i-pad][j-pad]
+
+
     for i in range(M):
         for j in range(N):
             s = 0
@@ -82,8 +87,7 @@ def convolution_2D(matrix, kernel):
                 for j_1 in range(K):
                     s += matrix_upd[i+i_1][j+j_1] * kernel[i_1][j_1]
             result[i][j] = s
-    for row in result:
-        print(*row)
+    return result
 
 
 print(create_vector(10))
@@ -160,4 +164,4 @@ kernel = [
 
 print()
 
-convolution_2D(matrix, kernel)
+print_matrix(convolution_2D(matrix, kernel))
