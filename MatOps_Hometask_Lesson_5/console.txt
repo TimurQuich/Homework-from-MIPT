@@ -1,0 +1,55 @@
+D:\Горный\NEW_CHAPTER\PROGRAMMING\Matrix_Operations\Scripts\python.exe D:\Горный\NEW_CHAPTER\PROGRAMMING\Matrix_Operations\main.py 
+Initial matrix A:
+0.613 0.427 0.322
+0.606 0.938 0.341
+
+Initial matrix B:
+0.917 0.58
+0.508 0.44
+0.815 0.075
+
+Matrix-matrix multiplication:
+1.041467 0.56757
+1.310121 0.789775
+
+Matrix-vector multiplication:
+1.7849
+2.4516
+
+Square matrix for diagonal sum calculation:
+0.89 0.115 0.806
+0.839 0.466 0.46
+0.697 0.652 0.664
+Sum of diagonals: 3.5229999999999997
+
+Vector histogram calculation:
+Initial list: [74, 42, 70, 4, 81, 2, 69, 16, 68, 17, 93, 3, 13, 18, 85, 82, 18, 55, 31, 53]
+Bin 1 contains 3 element(s). Probability: 0.15
+Bin 2 contains 5 element(s). Probability: 0.25
+Bin 3 contains 0 element(s). Probability: 0.0
+Bin 4 contains 1 element(s). Probability: 0.05
+Bin 5 contains 1 element(s). Probability: 0.05
+Bin 6 contains 2 element(s). Probability: 0.1
+Bin 7 contains 2 element(s). Probability: 0.1
+Bin 8 contains 2 element(s). Probability: 0.1
+Bin 9 contains 3 element(s). Probability: 0.15
+Bin 10 contains 1 element(s). Probability: 0.05
+
+Vector kernel filtering:
+Filtered result: [10, 0, 40, 40, 0, -40, -40, -10]
+
+Operations with files:
+Result saved to 'result.txt'
+
+Data is read from file:
+0.89 0.115 0.806
+0.839 0.466 0.46
+0.697 0.652 0.664
+
+Matrix-matrix multiplication (80x80): 0.074184 seconds
+Matrix-vector multiplication (80x80): 0.001001 seconds
+Diagonal sum calculation (80x80): 0.0 seconds
+Histogram (5000 elements): 0.002 seconds
+Vector filter (5000 elements): 0.006875 seconds
+
+Process finished with exit code 0
